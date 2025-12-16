@@ -15,7 +15,7 @@
   <body>
     <header>
       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light px-4">
-        <a class="navbar-brand" href="#">MyBusiness</a>
+        <a class="navbar-brand" href="#">Nandgaon Communication</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -29,7 +29,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item">
               <a class="nav-link active" href="#">Home</a>
             </li>
@@ -43,23 +43,40 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
-        </div>
 
-        <form class="form-inline my-2 my-lg-0 ml-auto">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
+          <!-- Search moved inside collapse so it stacks on mobile and aligns right on larger screens -->
+          <form class="form-inline my-2 my-lg-0" role="search">
+            <input
+              id="nav-search"
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" aria-label="Submit search">
+              Search
+            </button>
+          </form>
+        </div>
       </nav>
     </header>
-    <h1>Hello Frontend</h1>
-    <p>Basic HTML structure working.</p>
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7 text-center text-md-left">
+            <h1 class="display-4">We Build Digital Solutions for Growing Businesses</h1>
+            <p class="lead text-muted">Modern websites and applications designed to help your business grow, engage customers, and increase revenue.</p>
+            <p>
+              <a href="#contact" class="btn btn-primary btn-lg btn-block d-md-inline-block mr-md-2">Get Started</a>
+              <a href="#services" class="btn btn-outline-secondary btn-lg btn-block d-md-inline-block">Our Services</a>
+            </p>
+          </div>
+          <div class="col-md-5 text-center mt-4 mt-md-0">
+            <img src="https://source.unsplash.com/420x280/?business,technology" alt="Hero illustration" class="img-fluid rounded shadow-sm mx-auto d-block">
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
